@@ -1,0 +1,3 @@
+interface MIPSifc;
+    
+endinterface
