@@ -47,7 +47,7 @@ module ALU(
             MUL: register<=(a*b);//mul
             CLR:register<=32'b0;//clr
             STF:register<=8'hffffffff;//stf
-            LWSW:register<=(a+(b>>1));// lw/sw
+            LWSW:register<=(a+(b<<2));// lw/sw
             /* SRA*/
             SRA:begin 
                 if(a<0 && b!=0)
